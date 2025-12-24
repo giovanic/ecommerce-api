@@ -19,7 +19,7 @@ gem "rack-cors"
 gem "trailblazer-rails", "~> 2.4"
 gem "reform", "~> 2.6"
 gem "reform-rails"
-gem "dry-validation", "~> 1.10"
+gem "dry-validation", "~> 1.11"
 gem "dry-monads", "~> 1.6"
 gem "representable", "~> 3.2"
 
