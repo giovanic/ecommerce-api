@@ -45,7 +45,7 @@ gem "activestorage", "~> 8.0"
 gem "meilisearch-rails", "~> 0.11"
 
 # Utilities
-gem "money-rails", "~> 1.15"
+gem "money-rails", "~> 2.0"
 gem "friendly_id", "~> 5.5"
 gem "kaminari", "~> 1.2"
 gem "paranoia", "~> 3.0"
