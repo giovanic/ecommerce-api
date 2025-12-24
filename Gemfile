@@ -34,7 +34,7 @@ gem "solid_queue"
 gem "solid_cache"
 
 # Payments
-gem "stripe", "~> 10.0"
+gem "stripe", "~> 18.1"
 gem "mercadopago-sdk", "~> 2.2"
 
 # File Upload
