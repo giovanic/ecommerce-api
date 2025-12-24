@@ -1,0 +1,54 @@
+<div class="header">
+  <h1>Confirmação de Pedido</h1>
+</div>
+
+<div class="content">
+  <p>Olá <%= @account.email %>,</p>
+  
+  <p>Seu pedido foi confirmado com sucesso!</p>
+  
+  <h2>Detalhes do Pedido</h2>
+  <p><strong>Número do Pedido:</strong> <%= @order.order_number %></p>
+  <p><strong>Data:</strong> <%= @order.created_at.strftime("%d/%m/%Y às %H:%M") %></p>
+  <p><strong>Status:</strong> <%= @order.status.humanize %></p>
+  
+  <h3>Itens do Pedido:</h3>
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="padding: 10px; text-align: left;">Produto</th>
+        <th style="padding: 10px; text-align: center;">Quantidade</th>
+        <th style="padding: 10px; text-align: right;">Preço</th>
+        <th style="padding: 10px; text-align: right;">Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @order_items.each do |item| %>
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #ddd;"><%= item.product.name %></td>
+          <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;"><%= item.quantity %></td>
+          <td style="padding: 10px; text-align: right; border-bottom: 1px solid #ddd;">R$ <%= number_to_currency(item.price, unit: "", delimiter: ".", separator: ",") %></td>
+          <td style="padding: 10px; text-align: right; border-bottom: 1px solid #ddd;">R$ <%= number_to_currency(item.subtotal, unit: "", delimiter: ".", separator: ",") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" style="padding: 10px; text-align: right;"><strong>Total:</strong></td>
+        <td style="padding: 10px; text-align: right;"><strong>R$ <%= number_to_currency(@order.total_amount, unit: "", delimiter: ".", separator: ",") %></strong></td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <h3>Endereço de Entrega:</h3>
+  <p><%= simple_format(@order.shipping_address) %></p>
+  
+  <p>Em breve você receberá mais informações sobre a entrega do seu pedido.</p>
+  
+  <p>Obrigado por comprar conosco!</p>
+</div>
+
+<div class="footer">
+  <p>Este é um email automático, por favor não responda.</p>
+  <p>&copy; <%= Time.current.year %> E-commerce Platform. Todos os direitos reservados.</p>
+</div>

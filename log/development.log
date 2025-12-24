@@ -1,0 +1,1564 @@
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+  [1m[35m (185.0ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (241.4ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (93.9ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_test" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-12-19 22:38:54 -0300
+  [1m[35m (27.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[35m (20.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20251220012943_create_rodauth.rb
+
+
+):
+  
+activerecord (8.0.4) lib/active_record/migration.rb:742:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 22:38:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20251220012943_create_rodauth.rb
+
+
+):
+  
+activerecord (8.0.4) lib/active_record/migration.rb:742:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-20 01:39:17.160740', '2025-12-20 01:39:17.160744') RETURNING "key" /*application='EcommerceBackend'*/[0m
+Migrating to CreateRodauth (20251220012943)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (28.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE status IN (1, 2) /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220012943') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-12-19 22:39:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 22:39:30 -0300
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+Started GET "/health" for ::1 at 2025-12-19 22:39:51 -0300
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 22:39:52 -0300
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/health" for ::1 at 2025-12-19 22:40:33 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: ecommerce_backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+)
+Caused by: PG::ConnectionBad (connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce_backend_development" does not exist
+)
+
+Information for: ActiveRecord::NoDatabaseError (We could not find your database: ecommerce_backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+  
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in `reconnect'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:773:in `block in verify!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `verify!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:781:in `connect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:987:in `block in with_raw_connection'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:986:in `with_raw_connection'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `with_connection'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.4) lib/active_record/migration.rb:1430:in `initialize'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `new'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `open'
+activerecord (8.0.4) lib/active_record/migration.rb:762:in `block (2 levels) in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.4) lib/active_record/migration.rb:761:in `block in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `each'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:739:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce_backend_development" does not exist
+):
+  
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:751:in `polling_loop'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:795:in `async_connect_or_reset'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:951:in `connect_to_hosts'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:871:in `new'
+pg-1.6.2-x86_64 (linux) lib/pg.rb:88:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in `reconnect'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:773:in `block in verify!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `verify!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:781:in `connect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:987:in `block in with_raw_connection'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:986:in `with_raw_connection'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `with_connection'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.4) lib/active_record/migration.rb:1430:in `initialize'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `new'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `open'
+activerecord (8.0.4) lib/active_record/migration.rb:762:in `block (2 levels) in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.4) lib/active_record/migration.rb:761:in `block in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `each'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:739:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 22:40:35 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: ecommerce_backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+)
+Caused by: PG::ConnectionBad (connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce_backend_development" does not exist
+)
+
+Information for: ActiveRecord::NoDatabaseError (We could not find your database: ecommerce_backend_development. Available database configurations can be found in config/database.yml.
+
+To resolve this error:
+
+- Did you not create the database, or did you delete it? To create the database, run:
+
+    bin/rails db:create
+
+- Has the database name changed? Verify that config/database.yml contains the correct database name.
+):
+  
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:63:in `rescue in new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:57:in `new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in `reconnect'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:773:in `block in verify!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `verify!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:781:in `connect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:987:in `block in with_raw_connection'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:986:in `with_raw_connection'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `with_connection'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.4) lib/active_record/migration.rb:1430:in `initialize'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `new'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `open'
+activerecord (8.0.4) lib/active_record/migration.rb:762:in `block (2 levels) in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.4) lib/active_record/migration.rb:761:in `block in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `each'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:739:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+
+Information for cause: PG::ConnectionBad (connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce_backend_development" does not exist
+):
+  
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:751:in `polling_loop'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:795:in `async_connect_or_reset'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:951:in `connect_to_hosts'
+pg-1.6.2-x86_64 (linux) lib/pg/connection.rb:871:in `new'
+pg-1.6.2-x86_64 (linux) lib/pg.rb:88:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:58:in `new_client'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:939:in `connect'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:951:in `reconnect'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:669:in `block in reconnect!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:668:in `reconnect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:773:in `block in verify!'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:763:in `verify!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:781:in `connect!'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:987:in `block in with_raw_connection'
+activesupport (8.0.4) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract_adapter.rb:986:in `with_raw_connection'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:128:in `quote_string'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/quoting.rb:76:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/quoting.rb:122:in `quote'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1142:in `quoted_scope'
+activerecord (8.0.4) lib/active_record/connection_adapters/postgresql/schema_statements.rb:1119:in `data_source_sql'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:60:in `table_exists?'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:55:in `block in create_table'
+activerecord (8.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `with_connection'
+activerecord (8.0.4) lib/active_record/schema_migration.rb:54:in `create_table'
+activerecord (8.0.4) lib/active_record/migration.rb:1430:in `initialize'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `new'
+activerecord (8.0.4) lib/active_record/migration.rb:1278:in `open'
+activerecord (8.0.4) lib/active_record/migration.rb:762:in `block (2 levels) in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration/pending_migration_connection.rb:8:in `with_temporary_pool'
+activerecord (8.0.4) lib/active_record/migration.rb:761:in `block in pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `each'
+activerecord (8.0.4) lib/active_record/migration.rb:760:in `pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:739:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (135.3ms)[0m  [1m[35mCREATE DATABASE "ecommerce_backend_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (36.0ms)[0m  [1m[35mCREATE DATABASE "ecommerce_backend_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/health" for ::1 at 2025-12-19 22:42:52 -0300
+  [1m[35m (30.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20251220012943_create_rodauth.rb
+
+
+):
+  
+activerecord (8.0.4) lib/active_record/migration.rb:742:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 22:42:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20251220012943_create_rodauth.rb
+
+
+):
+  
+activerecord (8.0.4) lib/active_record/migration.rb:742:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7039017590593999185) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-20 01:43:08.068043', '2025-12-20 01:43:08.068049') RETURNING "key" /*application='EcommerceBackend'*/[0m
+Migrating to CreateRodauth (20251220012943)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (8.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE status IN (1, 2) /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220012943') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(7039017590593999185) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/health" for ::1 at 2025-12-19 23:25:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+Started GET "/favicon.ico" for ::1 at 2025-12-19 23:25:49 -0300
+  
+Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares)
+Caused by: Roda::RodaError (You're missing a session handler, try using the sessions plugin.)
+
+Information for: Rodauth::Rails::Error (There is no session middleware configured, see instructions on how to add it: https://guides.rubyonrails.org/api_app.html#using-session-middlewares):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+
+Information for cause: Roda::RodaError (You're missing a session handler, try using the sessions plugin.):
+  
+app/misc/rodauth_app.rb:9:in `block in <class:RodauthApp>'
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/health" for ::1 at 2025-12-19 23:26:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+Processing by HealthController#show as HTML
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-12-19 23:26:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/health" for ::1 at 2025-12-20 15:30:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+Processing by HealthController#show as HTML
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-12-20 15:52:39 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/giovani/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/giovani/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 484ms (Views: 7.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 327.0ms)
+
+
+Started GET "/icon.png" for ::1 at 2025-12-20 15:52:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 172.18.0.1 at 2025-12-20 19:05:36 +0000
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20251220012943_create_rodauth.rb
+
+
+):
+  
+activerecord (8.0.4) lib/active_record/migration.rb:742:in `check_pending_migrations'
+activerecord (8.0.4) lib/active_record/migration.rb:659:in `block (2 levels) in call'
+activesupport (8.0.4) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.4) lib/active_record/migration.rb:664:in `block in call'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `synchronize'
+activerecord (8.0.4) lib/active_record/migration.rb:656:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.4) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.4) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.4) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.4) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.2.4) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.2.4) lib/rack/sendfile.rb:131:in `call'
+actionpack (8.0.4) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+rack-cors (3.0.0) lib/rack/cors.rb:102:in `call'
+railties (8.0.4) lib/rails/engine.rb:535:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-20 19:07:52.022423', '2025-12-20 19:07:52.022427') RETURNING "key" /*application='EcommerceBackend'*/[0m
+Migrating to CreateRodauth (20251220012943)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (21.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE status IN (1, 2) /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial NOT NULL PRIMARY KEY, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220012943') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (103.2ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (126.7ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+Migrating to EnablePgcryptoExtension (20251220000000)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (17.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "pgcrypto" /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (50.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220000000') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateTenants (20251220190800)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (32.6ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "subdomain" character varying NOT NULL, "settings" json DEFAULT '{}', "active" boolean DEFAULT TRUE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_tenants_on_subdomain" ON "tenants" ("subdomain") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190800') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCategories (20251220190808)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "slug" character varying NOT NULL, "description" text, "tenant_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_cf18d1e171"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE INDEX "index_categories_on_tenant_id" ON "categories" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_categories_on_tenant_id_and_slug" ON "categories" ("tenant_id", "slug") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190808') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateProducts (20251220190818)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" text, "price" decimal(10,2) NOT NULL, "sku" character varying, "stock_quantity" integer DEFAULT 0 NOT NULL, "images" json DEFAULT '[]', "active" boolean DEFAULT TRUE, "tenant_id" uuid NOT NULL, "category_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fbc24595c9"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE INDEX "index_products_on_tenant_id" ON "products" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_products_on_tenant_id_and_sku" ON "products" ("tenant_id", "sku") WHERE sku IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE INDEX "index_products_on_active" ON "products" ("active") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190818') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCarts (20251220190829)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" uuid, "session_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f37446ef7b"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (79.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eiche_tech_development" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (280.1ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (23.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_login_change_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_password_reset_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_remember_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_verification_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (19.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE (status = ANY (ARRAY[1, 2])) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.1ms)[0m  [1m[35mALTER TABLE "account_login_change_keys" ADD CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.0ms)[0m  [1m[35mALTER TABLE "account_password_reset_keys" ADD CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "account_remember_keys" ADD CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.7ms)[0m  [1m[35mALTER TABLE "account_verification_keys" ADD CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20251220012943) /*application='EcommerceBackend'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20251220000000); /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-23 23:38:43.609712', '2025-12-23 23:38:43.609721') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '84c0564157d4e0bc311b0a39f60cd6258a01abdc', '2025-12-23 23:38:43.619520', '2025-12-23 23:38:43.619523') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+Migrating to CreateTenants (20251220190800)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "subdomain" character varying NOT NULL, "settings" json DEFAULT '{}', "active" boolean DEFAULT TRUE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_tenants_on_subdomain" ON "tenants" ("subdomain") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190800') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCategories (20251220190808)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "slug" character varying NOT NULL, "description" text, "tenant_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_cf18d1e171"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE INDEX "index_categories_on_tenant_id" ON "categories" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_categories_on_tenant_id_and_slug" ON "categories" ("tenant_id", "slug") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190808') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateProducts (20251220190818)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.9ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" text, "price" decimal(10,2) NOT NULL, "sku" character varying, "stock_quantity" integer DEFAULT 0 NOT NULL, "images" json DEFAULT '[]', "active" boolean DEFAULT TRUE, "tenant_id" uuid NOT NULL, "category_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fbc24595c9"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_products_on_tenant_id" ON "products" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_products_on_tenant_id_and_sku" ON "products" ("tenant_id", "sku") WHERE sku IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE INDEX "index_products_on_active" ON "products" ("active") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190818') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCarts (20251220190829)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" uuid, "session_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f37446ef7b"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (69.4ms)[0m  [1m[34mSELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'accounts' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (92.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eiche_tech_development" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (64.9ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (19.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_login_change_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_password_reset_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_remember_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_verification_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE (status = ANY (ARRAY[1, 2])) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.0ms)[0m  [1m[35mALTER TABLE "account_login_change_keys" ADD CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "account_password_reset_keys" ADD CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.5ms)[0m  [1m[35mALTER TABLE "account_remember_keys" ADD CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.6ms)[0m  [1m[35mALTER TABLE "account_verification_keys" ADD CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20251220012943) /*application='EcommerceBackend'*/[0m
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20251220000000); /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-23 23:40:35.400273', '2025-12-23 23:40:35.400277') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '84c0564157d4e0bc311b0a39f60cd6258a01abdc', '2025-12-23 23:40:35.407437', '2025-12-23 23:40:35.407441') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+Migrating to CreateTenants (20251220190800)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "subdomain" character varying NOT NULL, "settings" json DEFAULT '{}', "active" boolean DEFAULT TRUE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_tenants_on_subdomain" ON "tenants" ("subdomain") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190800') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCategories (20251220190808)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "slug" character varying NOT NULL, "description" text, "tenant_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_cf18d1e171"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE INDEX "index_categories_on_tenant_id" ON "categories" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_categories_on_tenant_id_and_slug" ON "categories" ("tenant_id", "slug") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190808') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateProducts (20251220190818)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" text, "price" decimal(10,2) NOT NULL, "sku" character varying, "stock_quantity" integer DEFAULT 0 NOT NULL, "images" json DEFAULT '[]', "active" boolean DEFAULT TRUE, "tenant_id" uuid NOT NULL, "category_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fbc24595c9"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE INDEX "index_products_on_tenant_id" ON "products" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_products_on_tenant_id_and_sku" ON "products" ("tenant_id", "sku") WHERE sku IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_products_on_active" ON "products" ("active") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190818') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCarts (20251220190829)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" uuid, "session_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f37446ef7b"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mDATABASE_URL[0m, [36mREDIS_URL[0m, [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mMEILISEARCH_URL[0m, [36mMEILISEARCH_KEY[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (76.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eiche_tech_development" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (75.9ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (33.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_login_change_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_password_reset_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_remember_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (21.7ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_verification_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (17.1ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE (status = ANY (ARRAY[1, 2])) /*application='EcommerceBackend'*/[0m
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "account_login_change_keys" ADD CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "account_password_reset_keys" ADD CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "account_remember_keys" ADD CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "account_verification_keys" ADD CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20251220012943) /*application='EcommerceBackend'*/[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20251220000000); /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-23 23:41:51.304061', '2025-12-23 23:41:51.304067') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '84c0564157d4e0bc311b0a39f60cd6258a01abdc', '2025-12-23 23:41:51.312623', '2025-12-23 23:41:51.312628') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+Migrating to CreateTenants (20251220190800)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "subdomain" character varying NOT NULL, "settings" json DEFAULT '{}', "active" boolean DEFAULT TRUE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_tenants_on_subdomain" ON "tenants" ("subdomain") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190800') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCategories (20251220190808)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "slug" character varying NOT NULL, "description" text, "tenant_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_cf18d1e171"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_categories_on_tenant_id" ON "categories" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_categories_on_tenant_id_and_slug" ON "categories" ("tenant_id", "slug") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190808') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (11.1ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateProducts (20251220190818)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" text, "price" decimal(10,2) NOT NULL, "sku" character varying, "stock_quantity" integer DEFAULT 0 NOT NULL, "images" json DEFAULT '[]', "active" boolean DEFAULT TRUE, "tenant_id" uuid NOT NULL, "category_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fbc24595c9"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_products_on_tenant_id" ON "products" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_products_on_tenant_id_and_sku" ON "products" ("tenant_id", "sku") WHERE sku IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE INDEX "index_products_on_active" ON "products" ("active") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190818') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCarts (20251220190829)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" uuid, "session_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f37446ef7b"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (35.0ms)[0m  [1m[34mSELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'accounts' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (74.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eiche_tech_development" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='EcommerceBackend'*/[0m
+  [1m[35m (75.6ms)[0m  [1m[35mCREATE DATABASE "eiche_tech_development" ENCODING = 'unicode' /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (18.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "citext" /*application='EcommerceBackend'*/[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_login_change_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "account_login_change_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "login" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_password_reset_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE "account_password_reset_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_remember_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "account_remember_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "deadline" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "account_verification_keys" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (19.5ms)[0m  [1m[35mCREATE TABLE "account_verification_keys" ("id" bigserial primary key, "key" character varying NOT NULL, "requested_at" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL, "email_last_sent" timestamp(6) DEFAULT CURRENT_TIMESTAMP NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "accounts" CASCADE /*application='EcommerceBackend'*/[0m
+  [1m[35m (24.4ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" bigserial primary key, "status" integer DEFAULT 1 NOT NULL, "email" citext NOT NULL, "password_hash" character varying) /*application='EcommerceBackend'*/[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_accounts_on_email" ON "accounts" ("email") WHERE (status = ANY (ARRAY[1, 2])) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.9ms)[0m  [1m[35mALTER TABLE "account_login_change_keys" ADD CONSTRAINT "fk_rails_18962144a4"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.4ms)[0m  [1m[35mALTER TABLE "account_password_reset_keys" ADD CONSTRAINT "fk_rails_ccaeb37cea"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (4.9ms)[0m  [1m[35mALTER TABLE "account_remember_keys" ADD CONSTRAINT "fk_rails_9b2f6d8501"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "account_verification_keys" ADD CONSTRAINT "fk_rails_2e3b612008"
+FOREIGN KEY ("id")
+  REFERENCES "accounts" ("id")
+ /*application='EcommerceBackend'*/[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20251220012943) /*application='EcommerceBackend'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20251220000000); /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-12-23 23:43:08.137831', '2025-12-23 23:43:08.137834') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '84c0564157d4e0bc311b0a39f60cd6258a01abdc', '2025-12-23 23:43:08.145803', '2025-12-23 23:43:08.145807') RETURNING "key" /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+Migrating to CreateTenants (20251220190800)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "subdomain" character varying NOT NULL, "settings" json DEFAULT '{}', "active" boolean DEFAULT TRUE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_tenants_on_subdomain" ON "tenants" ("subdomain") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190800') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCategories (20251220190808)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (35.4ms)[0m  [1m[35mCREATE TABLE "categories" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "slug" character varying NOT NULL, "description" text, "tenant_id" uuid NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_cf18d1e171"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE INDEX "index_categories_on_tenant_id" ON "categories" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_categories_on_tenant_id_and_slug" ON "categories" ("tenant_id", "slug") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190808') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateProducts (20251220190818)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "name" character varying NOT NULL, "description" text, "price" decimal(10,2) NOT NULL, "sku" character varying, "stock_quantity" integer DEFAULT 0 NOT NULL, "images" json DEFAULT '[]', "active" boolean DEFAULT TRUE, "tenant_id" uuid NOT NULL, "category_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fbc24595c9"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_fb915499a4"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE INDEX "index_products_on_tenant_id" ON "products" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_products_on_tenant_id_and_sku" ON "products" ("tenant_id", "sku") WHERE sku IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_active" ON "products" ("active") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190818') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCarts (20251220190829)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (35.3ms)[0m  [1m[35mCREATE TABLE "carts" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" bigint, "session_id" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f37446ef7b"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE INDEX "index_carts_on_account_id" ON "carts" ("account_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_carts_on_session_id" ON "carts" ("session_id") WHERE session_id IS NOT NULL /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190829') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateCartItems (20251220190836)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "cart_id" uuid NOT NULL, "product_id" uuid NOT NULL, "quantity" integer DEFAULT 1 NOT NULL, "price" decimal(10,2) NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6cdb1f0139"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+, CONSTRAINT "fk_rails_681a180e84"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE INDEX "index_cart_items_on_cart_id" ON "cart_items" ("cart_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE INDEX "index_cart_items_on_product_id" ON "cart_items" ("product_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_cart_items_on_cart_id_and_product_id" ON "cart_items" ("cart_id", "product_id") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190836') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateOrders (20251220190848)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "orders" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "account_id" bigint NOT NULL, "tenant_id" uuid NOT NULL, "order_number" character varying NOT NULL, "total_amount" decimal(10,2) NOT NULL, "status" integer DEFAULT 0 NOT NULL, "payment_status" integer DEFAULT 0 NOT NULL, "shipping_address" text NOT NULL, "payment_method" character varying, "payment_details" json DEFAULT '{}', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_144e25bef6"
+FOREIGN KEY ("account_id")
+  REFERENCES "accounts" ("id")
+, CONSTRAINT "fk_rails_2d6d7a62dd"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_orders_on_account_id" ON "orders" ("account_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_orders_on_tenant_id" ON "orders" ("tenant_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_orders_on_order_number" ON "orders" ("order_number") /*application='EcommerceBackend'*/[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE INDEX "index_orders_on_account_id_and_created_at" ON "orders" ("account_id", "created_at") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE INDEX "index_orders_on_status" ON "orders" ("status") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190848') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+Migrating to CreateOrderItems (20251220190857)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "order_id" uuid NOT NULL, "product_id" uuid NOT NULL, "quantity" integer DEFAULT 1 NOT NULL, "price" decimal(10,2) NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_e3cb28f071"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+, CONSTRAINT "fk_rails_f1a29ddd47"
+FOREIGN KEY ("product_id")
+  REFERENCES "products" ("id")
+) /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE INDEX "index_order_items_on_order_id" ON "order_items" ("order_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE INDEX "index_order_items_on_product_id" ON "order_items" ("product_id") /*application='EcommerceBackend'*/[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_order_items_on_order_id_and_product_id" ON "order_items" ("order_id", "product_id") /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251220190857') RETURNING "version" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1594552167476079420) /*application='EcommerceBackend'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (3.0ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (3.0ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" /*application='EcommerceBackend'*/[0m
+  [1m[36mOrder Load (1.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (2.5ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" /*application='EcommerceBackend'*/[0m
+  [1m[36mCart Load (1.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products" /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "tenants" WHERE "tenants"."subdomain" = 'main' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Create (0.7ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "subdomain", "settings", "active", "created_at", "updated_at") VALUES ('Loja Principal', 'main', '{"currency":"BRL","timezone":"America/Sao_Paulo"}', TRUE, '2025-12-23 23:44:29.318780', '2025-12-23 23:44:29.318780') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'eletronicos' AND "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (1.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Eletrônicos', 'eletronicos', 'Produtos eletrônicos e gadgets', '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '2025-12-23 23:44:29.579352', '2025-12-23 23:44:29.579352') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'roupas' AND "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Roupas', 'roupas', 'Roupas e acessórios de moda', '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '2025-12-23 23:44:29.596585', '2025-12-23 23:44:29.596585') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (6.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'livros' AND "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Livros', 'livros', 'Livros físicos e digitais', '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '2025-12-23 23:44:29.613039', '2025-12-23 23:44:29.613039') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'casa-e-decoracao' AND "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Casa e Decoração', 'casa-e-decoracao', 'Itens para casa e decoração', '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '2025-12-23 23:44:29.639957', '2025-12-23 23:44:29.639957') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'esportes' AND "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Esportes', 'esportes', 'Equipamentos e roupas esportivas', '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '2025-12-23 23:44:29.655992', '2025-12-23 23:44:29.655992') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Eletrônicos' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Roupas' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Livros' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'SMART-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (1.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Smartphone Galaxy X', 'Smartphone de última geração com câmera de 48MP', 2499.9, 'SMART-001', 50, '["https://via.placeholder.com/400x400?text=Smartphone"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', 'd47f2c0c-7692-46fc-8bdc-7a6f78a44c21', '2025-12-23 23:44:29.698500', '2025-12-23 23:44:29.698500') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'NOTE-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Notebook Pro 15"', 'Notebook potente para trabalho e jogos', 4999.9, 'NOTE-001', 30, '["https://via.placeholder.com/400x400?text=Notebook"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', 'd47f2c0c-7692-46fc-8bdc-7a6f78a44c21', '2025-12-23 23:44:29.711556', '2025-12-23 23:44:29.711556') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'FONE-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Fone de Ouvido Bluetooth', 'Fone de ouvido sem fio com cancelamento de ruído', 299.9, 'FONE-001', 100, '["https://via.placeholder.com/400x400?text=Fone"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', 'd47f2c0c-7692-46fc-8bdc-7a6f78a44c21', '2025-12-23 23:44:29.728205', '2025-12-23 23:44:29.728205') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'CAM-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Camiseta Básica', 'Camiseta 100% algodão disponível em várias cores', 49.9, 'CAM-001', 200, '["https://via.placeholder.com/400x400?text=Camiseta"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '532e2666-b073-4d20-9eba-7b48864de9e7', '2025-12-23 23:44:29.755705', '2025-12-23 23:44:29.755705') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'CALCA-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Calça Jeans', 'Calça jeans confortável e durável', 129.9, 'CALCA-001', 150, '["https://via.placeholder.com/400x400?text=Calca"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '532e2666-b073-4d20-9eba-7b48864de9e7', '2025-12-23 23:44:29.802732', '2025-12-23 23:44:29.802732') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'LIVRO-001' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Livro: Clean Code', 'Guia essencial para programadores', 89.9, 'LIVRO-001', 75, '["https://via.placeholder.com/400x400?text=Clean+Code"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '7a1b6187-43bd-43e6-8a93-004173bc6d93', '2025-12-23 23:44:29.821642', '2025-12-23 23:44:29.821642') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'LIVRO-002' AND "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Livro: Design Patterns', 'Padrões de projeto explicados', 79.9, 'LIVRO-002', 60, '["https://via.placeholder.com/400x400?text=Design+Patterns"]', TRUE, '7074f94a-f10c-414d-9d2f-b62b6bb9acf2', '7a1b6187-43bd-43e6-8a93-004173bc6d93', '2025-12-23 23:44:29.835140', '2025-12-23 23:44:29.835140') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mAccount Load (2.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."email" = 'test@example.com' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK /*application='EcommerceBackend'*/[0m
+[dotenv] Set [36mJWT_SECRET[0m, [36mJWT_REFRESH_SECRET[0m, [36mSTRIPE_SECRET_KEY[0m, [36mSTRIPE_PUBLISHABLE_KEY[0m, [36mMERCADO_PAGO_ACCESS_TOKEN[0m, [36mCLOUDINARY_CLOUD_NAME[0m, [36mCLOUDINARY_API_KEY[0m, [36mCLOUDINARY_API_SECRET[0m, [36mFRONTEND_URL[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (3.5ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" /*application='EcommerceBackend'*/[0m
+  [1m[36mOrder Load (2.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.8ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" /*application='EcommerceBackend'*/[0m
+  [1m[36mCart Load (1.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Load (2.6ms)[0m  [1m[34mSELECT "products".* FROM "products" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (0.6ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = 'c4760905-70ea-442e-86f1-4b5e8aad570f' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.7ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = 'c4760905-70ea-442e-86f1-4b5e8aad570f' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (1.8ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = 'c4760905-70ea-442e-86f1-4b5e8aad570f' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.4ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = '7691f93c-a90d-4c9c-93d6-42d36149a32e' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.4ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = '7691f93c-a90d-4c9c-93d6-42d36149a32e' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = '7691f93c-a90d-4c9c-93d6-42d36149a32e' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = '320b4506-9b67-4fc1-bb09-978cedc54b7e' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.4ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = '320b4506-9b67-4fc1-bb09-978cedc54b7e' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = '320b4506-9b67-4fc1-bb09-978cedc54b7e' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = '848f1a1c-a40f-41c5-ab25-2671abd8e734' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (4.5ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = '848f1a1c-a40f-41c5-ab25-2671abd8e734' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = '848f1a1c-a40f-41c5-ab25-2671abd8e734' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.9ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = 'a3c150d8-267e-4fdc-a506-406f44e989a6' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.5ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = 'a3c150d8-267e-4fdc-a506-406f44e989a6' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = 'a3c150d8-267e-4fdc-a506-406f44e989a6' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = '5be95197-cc9f-45b8-aa8d-e244c733e629' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.4ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = '5be95197-cc9f-45b8-aa8d-e244c733e629' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.8ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = '5be95197-cc9f-45b8-aa8d-e244c733e629' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (1.8ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."product_id" = 'e05dd00d-c552-4eaa-b5b0-23ca22d13ba4' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrderItem Load (0.5ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."product_id" = 'e05dd00d-c552-4eaa-b5b0-23ca22d13ba4' /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = 'e05dd00d-c552-4eaa-b5b0-23ca22d13ba4' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Update All (1.4ms)[0m  [1m[33mUPDATE "products" SET "category_id" = NULL WHERE "products"."category_id" = 'd47f2c0c-7692-46fc-8bdc-7a6f78a44c21' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = 'd47f2c0c-7692-46fc-8bdc-7a6f78a44c21' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Update All (1.4ms)[0m  [1m[33mUPDATE "products" SET "category_id" = NULL WHERE "products"."category_id" = '532e2666-b073-4d20-9eba-7b48864de9e7' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = '532e2666-b073-4d20-9eba-7b48864de9e7' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Update All (1.2ms)[0m  [1m[33mUPDATE "products" SET "category_id" = NULL WHERE "products"."category_id" = '7a1b6187-43bd-43e6-8a93-004173bc6d93' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = '7a1b6187-43bd-43e6-8a93-004173bc6d93' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Update All (3.5ms)[0m  [1m[33mUPDATE "products" SET "category_id" = NULL WHERE "products"."category_id" = 'f9e17dbe-6925-4824-a498-be8b2ad9cec5' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = 'f9e17dbe-6925-4824-a498-be8b2ad9cec5' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Update All (1.1ms)[0m  [1m[33mUPDATE "products" SET "category_id" = NULL WHERE "products"."category_id" = 'b9f01768-8b92-4ef9-9ab5-958b054fd735' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Destroy (0.4ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = 'b9f01768-8b92-4ef9-9ab5-958b054fd735' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Load (1.0ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Load (4.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' /*application='EcommerceBackend'*/[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."tenant_id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Destroy (1.2ms)[0m  [1m[31mDELETE FROM "tenants" WHERE "tenants"."id" = '7074f94a-f10c-414d-9d2f-b62b6bb9acf2' /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "tenants" WHERE "tenants"."subdomain" = 'main' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTenant Create (1.9ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "subdomain", "settings", "active", "created_at", "updated_at") VALUES ('Loja Principal', 'main', '{"currency":"BRL","timezone":"America/Sao_Paulo"}', TRUE, '2025-12-23 23:45:29.541613', '2025-12-23 23:45:29.541613') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'eletronicos' AND "categories"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Eletrônicos', 'eletronicos', 'Produtos eletrônicos e gadgets', 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '2025-12-23 23:45:29.803069', '2025-12-23 23:45:29.803069') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'roupas' AND "categories"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Roupas', 'roupas', 'Roupas e acessórios de moda', 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '2025-12-23 23:45:29.814945', '2025-12-23 23:45:29.814945') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'livros' AND "categories"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Livros', 'livros', 'Livros físicos e digitais', 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '2025-12-23 23:45:29.826011', '2025-12-23 23:45:29.826011') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'casa-e-decoracao' AND "categories"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Casa e Decoração', 'casa-e-decoracao', 'Itens para casa e decoração', 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '2025-12-23 23:45:29.839810', '2025-12-23 23:45:29.839810') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."slug" = 'esportes' AND "categories"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "slug", "description", "tenant_id", "created_at", "updated_at") VALUES ('Esportes', 'esportes', 'Equipamentos e roupas esportivas', 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '2025-12-23 23:45:29.847577', '2025-12-23 23:45:29.847577') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Eletrônicos' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Roupas' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCategory Load (2.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = 'Livros' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'SMART-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Smartphone Galaxy X', 'Smartphone de última geração com câmera de 48MP', 2499.9, 'SMART-001', 50, '["https://via.placeholder.com/400x400?text=Smartphone"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '54d057cb-6c8a-4602-bd90-a8057f84f301', '2025-12-23 23:45:29.873865', '2025-12-23 23:45:29.873865') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'NOTE-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Notebook Pro 15"', 'Notebook potente para trabalho e jogos', 4999.9, 'NOTE-001', 30, '["https://via.placeholder.com/400x400?text=Notebook"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '54d057cb-6c8a-4602-bd90-a8057f84f301', '2025-12-23 23:45:29.888346', '2025-12-23 23:45:29.888346') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'FONE-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Fone de Ouvido Bluetooth', 'Fone de ouvido sem fio com cancelamento de ruído', 299.9, 'FONE-001', 100, '["https://via.placeholder.com/400x400?text=Fone"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '54d057cb-6c8a-4602-bd90-a8057f84f301', '2025-12-23 23:45:29.898217', '2025-12-23 23:45:29.898217') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'CAM-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Camiseta Básica', 'Camiseta 100% algodão disponível em várias cores', 49.9, 'CAM-001', 200, '["https://via.placeholder.com/400x400?text=Camiseta"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', 'a8b10d01-b1f4-4958-9cc7-faa35b5436db', '2025-12-23 23:45:29.909306', '2025-12-23 23:45:29.909306') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'CALCA-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Calça Jeans', 'Calça jeans confortável e durável', 129.9, 'CALCA-001', 150, '["https://via.placeholder.com/400x400?text=Calca"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', 'a8b10d01-b1f4-4958-9cc7-faa35b5436db', '2025-12-23 23:45:29.917843', '2025-12-23 23:45:29.917843') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'LIVRO-001' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Livro: Clean Code', 'Guia essencial para programadores', 89.9, 'LIVRO-001', 75, '["https://via.placeholder.com/400x400?text=Clean+Code"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '067125d8-aa87-487d-b8c8-f7423a240e70', '2025-12-23 23:45:29.929402', '2025-12-23 23:45:29.929402') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."sku" = 'LIVRO-002' AND "products"."tenant_id" = 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "sku", "stock_quantity", "images", "active", "tenant_id", "category_id", "created_at", "updated_at") VALUES ('Livro: Design Patterns', 'Padrões de projeto explicados', 79.9, 'LIVRO-002', 60, '["https://via.placeholder.com/400x400?text=Design+Patterns"]', TRUE, 'bf4ea7c6-53da-4981-9cf9-7d8a73216cf5', '067125d8-aa87-487d-b8c8-f7423a240e70', '2025-12-23 23:45:29.941590', '2025-12-23 23:45:29.941590') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mAccount Load (1.6ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."email" = 'test@example.com' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mAccount Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "accounts" WHERE "accounts"."email" = 'test@example.com' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mAccount Create (1.3ms)[0m  [1m[32mINSERT INTO "accounts" ("status", "email", "password_hash") VALUES (2, 'test@example.com', NULL) RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  [1m[36mCart Create (1.9ms)[0m  [1m[32mINSERT INTO "carts" ("account_id", "session_id", "created_at", "updated_at") VALUES (1, NULL, '2025-12-23 23:45:30.135455', '2025-12-23 23:45:30.135455') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (0.7ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = 'b0f1973f-318f-4c72-9fd6-5c3a102dc730' AND "cart_items"."product_id" = '003f79cc-e3e3-4327-a800-faa7f9cb3b7e' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:7:in `add_product'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mCartItem Create (1.6ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "product_id", "quantity", "price", "created_at", "updated_at") VALUES ('b0f1973f-318f-4c72-9fd6-5c3a102dc730', '003f79cc-e3e3-4327-a800-faa7f9cb3b7e', 2, 299.9, '2025-12-23 23:45:30.168700', '2025-12-23 23:45:30.168700') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1 OFFSET 1 /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Load (0.4ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = 'b0f1973f-318f-4c72-9fd6-5c3a102dc730' AND "cart_items"."product_id" = '0406fd4a-c19a-4ee9-b295-5c893c87c805' LIMIT 1 /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:7:in `add_product'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mCartItem Create (1.1ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "product_id", "quantity", "price", "created_at", "updated_at") VALUES ('b0f1973f-318f-4c72-9fd6-5c3a102dc730', '0406fd4a-c19a-4ee9-b295-5c893c87c805', 1, 89.9, '2025-12-23 23:45:30.181930', '2025-12-23 23:45:30.181930') RETURNING "id" /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT /*application='EcommerceBackend'*/[0m
+  ↳ app/models/cart.rb:13:in `add_product'
+  [1m[36mCategory Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" /*application='EcommerceBackend'*/[0m
+  [1m[36mProduct Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "products" /*application='EcommerceBackend'*/[0m
+  [1m[36mCartItem Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "cart_items" WHERE "cart_items"."cart_id" = 'b0f1973f-318f-4c72-9fd6-5c3a102dc730' /*application='EcommerceBackend'*/[0m

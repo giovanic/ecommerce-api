@@ -1,0 +1,35 @@
+Confirmação de Pedido
+====================
+
+Olá <%= @account.email %>,
+
+Seu pedido foi confirmado com sucesso!
+
+Detalhes do Pedido
+------------------
+Número do Pedido: <%= @order.order_number %>
+Data: <%= @order.created_at.strftime("%d/%m/%Y às %H:%M") %>
+Status: <%= @order.status.humanize %>
+
+Itens do Pedido:
+----------------
+<% @order_items.each do |item| %>
+- <%= item.product.name %>
+  Quantidade: <%= item.quantity %>
+  Preço: R$ <%= number_to_currency(item.price, unit: "", delimiter: ".", separator: ",") %>
+  Subtotal: R$ <%= number_to_currency(item.subtotal, unit: "", delimiter: ".", separator: ",") %>
+
+<% end %>
+Total: R$ <%= number_to_currency(@order.total_amount, unit: "", delimiter: ".", separator: ",") %>
+
+Endereço de Entrega:
+--------------------
+<%= @order.shipping_address %>
+
+Em breve você receberá mais informações sobre a entrega do seu pedido.
+
+Obrigado por comprar conosco!
+
+--
+Este é um email automático, por favor não responda.
+© <%= Time.current.year %> E-commerce Platform. Todos os direitos reservados.

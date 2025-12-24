@@ -1,0 +1,16 @@
+# .gitignore
+
+# Environment variables
+.env
+.env.local
+.env.*. local
+
+# Ignore uploaded files
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/.keep
+
+# Ignore master key
+/config/master.key
+/config/credentials/*. key
