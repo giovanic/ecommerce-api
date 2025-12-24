@@ -24,7 +24,7 @@ gem "dry-monads", "~> 1.6"
 gem "representable", "~> 3.2"
 
 # Authentication
-gem "rodauth-rails", "~> 1.14"
+gem "rodauth-rails", "~> 2.1"
 gem "jwt"
 gem "bcrypt", "~> 3.1.7"
 
